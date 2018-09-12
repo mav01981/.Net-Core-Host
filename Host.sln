@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host", "IHostService\Host.csproj", "{F77B43D0-C7B0-47EF-ABA2-09AD4A920E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IHostBuilderAsWindowsService", "IHostService\IHostBuilderAsWindowsService.csproj", "{F77B43D0-C7B0-47EF-ABA2-09AD4A920E1C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IHostBuilderAsConsole", "HostBuilder\IHostBuilderAsConsole.csproj", "{8A8656DE-2374-4CCC-BAF2-4D9B071F0CBC}"
 EndProject
