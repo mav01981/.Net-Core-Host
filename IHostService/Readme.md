@@ -15,5 +15,3 @@ sc create MyFileService binPath= "~\Release\netcoreapp2.1\win10-x64\publish\IHos
 ### Start the service
 
 sc start MyService
-
-For further details see my blog post [Running a .NET Core Generic Host App as a Windows Service]
