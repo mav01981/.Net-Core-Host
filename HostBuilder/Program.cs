@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using IHostBuilderAsConsole;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -33,6 +34,8 @@ namespace HostBuilderServices
 
                      #region snippet1
                      services.AddHostedService<TimedHostedService>();
+                     services.AddHostedService<ConsumeScopedServiceHostedService>();
+                     services.AddScoped<ScopedProcessingService>();
                      #endregion
                  })
                  .UseConsoleLifetime()
