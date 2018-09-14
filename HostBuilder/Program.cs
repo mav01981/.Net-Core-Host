@@ -30,7 +30,9 @@ namespace HostBuilderServices
                         .Build());
 
                      Log.Logger = new LoggerConfiguration()
-                     .WriteTo.File(rootDir + $@"\{string.Format("{0:yyMMdd}", DateTime.Now)}.txt").CreateLogger();
+                     .WriteTo
+                     .RollingFile("log-{Date}.txt")
+                     .CreateLogger();
 
                      #region snippet1
                      services.AddHostedService<TimedHostedService>();
